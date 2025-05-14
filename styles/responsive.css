@@ -1,7 +1,12 @@
 /* responsive.css */
 /* Desktop 1250~1920 */
 /* Tablet 1249~850 */
-@media screen and (max-width:1249px){
+@media screen and (max-width:1249px){/* 1249이하부터는 tablet으로 보여라 */
+    #wrap .intro {padding:0 80px;}
+    #wrap .intro .container {
+        /* width:100% 안써도 되는 이유 :
+        max-width:1250px '1250이하는 모두 100%다'라는 뜻이어서 */
+    }
     #wrap .intro .container h1:nth-child(2) {
         font-size:3.125rem; /* font-weight:700; */
     }
@@ -16,6 +21,7 @@
 }
 /* Mobile 849~320 */
 @media screen and (max-width:849px){
+    #wrap .intro {padding:0 15px;}
     #wrap .intro .container h1:nth-child(1) a img {width:40px;}
     #wrap .intro .container h1:nth-child(2) {
         font-size:1.875rem; 
