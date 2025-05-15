@@ -33,6 +33,10 @@
     #wrap .intro {padding:0 15px;}
     #wrap .intro .container h1:nth-child(1) a img {width:40px;}
     #wrap .intro .container h1:nth-child(2) {font-size:1.875rem;}
+    #wrap .intro .container .sponsor_question {
+        float:none; display:inline-block;
+        font-size:1.625rem; line-height:54px;
+    }
     /* ============2행 quiz */
     #wrap .quiz {padding:70px 15px;}
     #wrap .quiz .container {grid-template-columns:1fr;}
