@@ -2,11 +2,11 @@
 /* Desktop 1250~1920 */
 /* Tablet 1249~850 */
 @media screen and (max-width:1249px){/* 1249이하부터는 tablet으로 보여라 */
+    /* =============1행 intro */
     #wrap .intro {padding:0 80px;}
-    #wrap .intro .container {
-        /* width:100% 안써도 되는 이유 :
+    /* width:100% 안써도 되는 이유 :
         max-width:1250px '1250이하는 모두 100%다'라는 뜻이어서 */
-    }
+    #wrap .intro .container {}
     #wrap .intro .container h1:nth-child(2) {
         font-size:3.125rem; /* font-weight:700; */
     }
@@ -18,12 +18,30 @@
         width:333px; height:54px;
         font-size:1.25rem; letter-spacing:1.7;
     }
+    /* ============2행 quiz */
+    #wrap .quiz {padding:150px 80px;}
+    /*============= 3행 video */
+    #wrap .ad {padding:200px 80px;}
+    #wrap .ad .container h2 {font-size:2.5rem;}
+    #wrap .ad .container .sponsor_btn {
+        font-size:1.375rem;
+        width:270px; line-height:62px;
+    }
 }
 /* Mobile 849~320 */
 @media screen and (max-width:849px){
     #wrap .intro {padding:0 15px;}
     #wrap .intro .container h1:nth-child(1) a img {width:40px;}
-    #wrap .intro .container h1:nth-child(2) {
-        font-size:1.875rem; 
-    }
+    #wrap .intro .container h1:nth-child(2) {font-size:1.875rem;}
+    /* ============2행 quiz */
+    #wrap .quiz {padding:70px 15px;}
+    #wrap .quiz .container {grid-template-columns:1fr;}
+    #wrap .quiz .container #left_quiz {margin-bottom:50px;}
+    #wrap .quiz .container .right p:nth-child(1) img {width:70%;}
+    #wrap .quiz .container .right {text-align:center;}
+    /* ======3행 */
+    #wrap .ad {padding:50px 15px;}
+    #wrap .ad .container iframe {height:400px;}
+    /* iframe height600이 고정되어 있을 때랑은 다르게, 영상상하의 검은색 띠가 엄청 커지지 않음 */
+    #wrap .ad .container h2 {font-size:1.375rem;}
 }
